@@ -11,9 +11,9 @@ app = Flask(__name__)
 # Cloud Inference Configuration
 # We will try the requested model first. If it fails (due to not being on the free tier),
 # we can switch to a reliable standard model like Llama-3-8B-Instruct.
-MODEL_ID = "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+# MODEL_ID = "meta-llama/Llama-4-Scout-17B-16E-Instruct"
 # Fallback if the above is too heavy/unavailable on free API:
-# MODEL_ID = "meta-llama/Meta-Llama-3-8B-Instruct" 
+MODEL_ID = "meta-llama/Meta-Llama-3-8B-Instruct" 
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 
